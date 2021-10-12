@@ -1,44 +1,60 @@
-// alert("Привет");
-// var phone = prompt('Введите номер телефона', 8);
-// alert(phone);
-// let is18 = confirm("Вам исполнилось 18?");
-// let isBoss = confirm("Ты здесь главный?");
+// dz 11.10
 
-// alert(isBoss); // true, если нажата OK
-// var isAdmin = confirm("Ты администратор?")
+// Задача №1
+// let userName = prompt('Как тебя зовут?')
+// alert(`Привет, ${userName}`)
 
-// let age = prompt('Сколько тебе лет?', 30);
+// Задача №2
+// let user_birthYear = prompt('Какой у тебя год рождения?')
+// const birthYear = 2021
+// let age = (birthYear - user_birthYear);
+// alert(`Тебе, ${age}`)
 
-// alert(`Тебе ${age} лет!`);
+// Задача №3
+// const x = prompt('Введите длину стороны квадрата')
+// const y = 4
+// let long = (x * y);
+// alert(`Периметр такого квадрата равен ${long}`)
 
-let user = {
-    name: `Aleksandr Lisin`,
-    age: `30 лет`,
-};
+// Задача №4
+// const r = prompt('Введите радиус окружности')
+// const p = 3.1415
+// let s = (p * r);
+// alert(`Радиус такой окружности равен ${s}`)
 
-const birthYear = 1991;
+// Задача №5
+const s = prompt('Введите расстояние между городами(в киломатрах).')
+const t = prompt('За сколько часов Вы хотите добраться?')
+let v = (s / t);
+alert(`Вам необходимо двигаться со скоростью ${v} км/ч , чтобы
+успеть вовремя.`)
 
-console.log(user)
-console.log(typeof user)
-console.log(typeof age)
-// console.log(typeof user)
+// Задача №6
+const number = prompt('Сколько долларов вы хотите поменять?')
+const e = 1.15
+let a = (number / e);
+alert(`Вы получите ${a} евро.`)
 
-console.log(birthYear)
-console.log(typeof birthYear)
+// Задача №7
+// const number = prompt('Укажите обьем флешки в Гб')
+// const v = 1024
+// const e = 820
+// let a = (number * v / e);
+// alert(`${a} файлов размером в 820 Мб помещается на флешку.`)
 
-alert(`${user.name} ${user.age}`)
+// Задача №8
+// const sum = prompt('Сумма денег в кошельке?')
+// const price = prompt('Стоимость 1 шоколадки?')
+// let a = (sum / price);
+// let b = (sum % price);
+// alert(`${a} шоколадок можно купить ${b} рублей сдачи останется.`)
 
-// let x = 343;
-// let y = 23123;
+// Задача №9
+// const sum = prompt('Введите 3-х значное число')
+// let a = (sum / price);
+// let b = (sum % price);
+// let с = (sum % price);
+// alert(`${a} ${b} ${b}`)
 
-// let result = x + y;
-// console.log(result)
-
-
-let greeting = `Привет,`;
-let userName = `Александр`;
-
-let result = greeting + userName;
-console.log(result);     // Конкатенация
-
+// Задача №10
 
