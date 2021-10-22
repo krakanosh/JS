@@ -78,7 +78,7 @@
 // console.log(2);
 // console.log(3);
 
-// for (let i = 0; i <4; i++)
+// for (let i = 0; i < 4; i++)
 //     console.log(fruits[i]);
 
 // Обход массива с помощью цикла .forEach()
@@ -126,39 +126,39 @@
 
 // Функции function Expression
 
-let calculatSum = function (x, y) {
-    let result = (x + y);
-    console.log(result);
-    return result;
-}
-calculatSum(10, 20)     //<<Такую функцию нельзя вызвать до ее обьявления
+// let calculatSum = function (x, y) {
+//     let result = (x + y);
+//     console.log(result);
+//     return result;
+// }
+// calculatSum(10, 20)     //<<Такую функцию нельзя вызвать до ее обьявления
 
 
 // Обьекты  
 
-const petrName = `Petr`;
-const petrAge = 28;
-const petrSpeciality = `web-designer`;
-const petrCity = `Moscow`;
+// const petrName = `Petr`;
+// const petrAge = 28;
+// const petrSpeciality = `web-designer`;
+// const petrCity = `Moscow`;
 
-const petr = {
-    name: `Petr`,
-    age: 28,
-    speciality: `html coder`,
-    city: `Moscow`
-};
-console.log(petr);
-
-
+// const petr = {
+//     name: `Petr`,
+//     age: 28,
+//     speciality: `html coder`,
+//     city: `Moscow`
+// };
+// console.log(petr);
 
 
 
 
 
 
-// dz 11.10
 
-// Задача №1
+
+// // dz 11.10
+
+// // Задача №1
 // let userName = prompt('Как тебя зовут?')
 // alert(`Привет, ${userName}`)
 
@@ -168,19 +168,19 @@ console.log(petr);
 // let age = (birthYear - user_birthYear);
 // alert(`Тебе, ${age}`)
 
-// Задача №3
+// // Задача №3
 // const x = prompt('Введите длину стороны квадрата')
 // const y = 4
 // let long = (x * y);
 // alert(`Периметр такого квадрата равен ${long}`)
 
-// Задача №4
+// // Задача №4
 // const r = prompt('Введите радиус окружности')
 // const p = 3.1415
 // let s = (p * r);
 // alert(`Радиус такой окружности равен ${s}`)
 
-// Задача №5
+// // Задача №5
 // const s = prompt('Введите расстояние между городами(в киломатрах).')
 // const t = prompt('За сколько часов Вы хотите добраться?')
 // let v = (s / t);
@@ -193,21 +193,21 @@ console.log(petr);
 // let a = (number / e);
 // alert(`Вы получите ${a} евро.`)
 
-// Задача №7
+// // Задача №7
 // const number = prompt('Укажите обьем флешки в Гб')
 // const v = 1024
 // const e = 820
 // let a = (number * v / e);
 // alert(`${a} файлов размером в 820 Мб помещается на флешку.`)
 
-// Задача №8
+// // Задача №8
 // const sum = prompt('Сумма денег в кошельке?')
 // const price = prompt('Стоимость 1 шоколадки?')
 // let a = (sum / price);
 // let b = (sum % price);
 // alert(`${a} шоколадок можно купить ${b} рублей сдачи останется.`)
 
-// Задача №9
+// // Задача №9
 // const sum = prompt('Введите 3-х значное число')
 // let a = (sum / price);
 // let b = (sum % price);
@@ -215,3 +215,68 @@ console.log(petr);
 // alert(`${a} ${b} ${b}`)
 
 // Задача №10
+
+
+
+// DZ 2
+// // Задача №1
+// let year = prompt('Введите Ваш возраст?', '');
+
+// if (year <= 2) alert('Ребенок');
+// if (year >= 12 && year <= 18) alert('Подросток');
+// if (year >= 18 && year <= 60) alert('Взрослый');
+// if (year >= 60) alert('Пенсионер');
+
+// // Задача №2
+// const key = prompt(`safas`);
+// if (key == 0) alert(')');
+// if (key == 1) alert('!');
+// if (key == 2) alert('@');
+// if (key == 3) alert('#');
+// if (key == 4) alert('$');
+// if (key == 5) alert('%');
+// if (key == 6) alert('^');
+// if (key == 7) alert('&');
+// if (key == 8) alert('*');
+// if (key == 9) alert('(');
+
+// Задача №3
+
+
+
+// // Задача №4
+// const year = prompt(`Введите год`, `2000`);
+// if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0) { alert(`${year} год високосный`) }
+// else if (year % 400 !== 0 || year % 4 !== 0) alert(`${year} год не високосный`)
+
+// Задача №5
+
+
+
+// // Задача №6(Возможно работает неправильно!!!)
+// const usdChange = prompt(`Сколько долларов вы хотите поменять?`, 22);
+// const usd = 70.93;
+// const eur = 82.46;
+// const uan = 11.06;
+// const azn = 41.71;
+// let a = (usdChange * 70.93 / eur);
+// alert(`Вы получите ${a} евро.`)
+// let b = (usdChange * 70.93 / uan);
+// alert(`Вы получите ${b} юаней.`)
+// let c = (usdChange * 70.93 / azn);
+// alert(`Вы получите ${c} манат.`)
+
+// Задача №7
+const sumPurch = prompt(`Введите сумму покупки`, 277);
+if (sumPurch >= 200 && sumPurch <= 300) {
+    alert(`sdasd`);
+} 
+if (sumPurch >= 200 && sumPurch <= 300) {
+    alert(`sdasd`);
+}
+if (sumPurch >= 200 && sumPurch <= 300) {
+    alert(`sdasd`);
+}
+if (sumPurch >= 200 && sumPurch <= 300) {
+    alert(`sdasd`);
+}
