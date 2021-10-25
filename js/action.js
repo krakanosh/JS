@@ -198,23 +198,37 @@
 // const v = 1024
 // const e = 820
 // let a = (number * v / e);
+// a = Math.round(a)
 // alert(`${a} файлов размером в 820 Мб помещается на флешку.`)
 
 // // Задача №8
 // const sum = prompt('Сумма денег в кошельке?')
 // const price = prompt('Стоимость 1 шоколадки?')
 // let a = (sum / price);
+// a = Math.round(a)
 // let b = (sum % price);
 // alert(`${a} шоколадок можно купить ${b} рублей сдачи останется.`)
 
-// // Задача №9
-// const sum = prompt('Введите 3-х значное число')
-// let a = (sum / price);
-// let b = (sum % price);
-// let с = (sum % price);
-// alert(`${a} ${b} ${b}`)
+// Задача №9
+// let a = prompt(`Введите 3-х значное число`);
+// let b, sum = 0;
+// let z = a;
+// while (a > 0) {
+//     b = a % 10;
+//     sum = sum * 10 + b;
+//     a = parseInt(a / 10);
+// }
+// alert(sum);
 
-// Задача №10
+
+
+// // Задача №10
+// const number = prompt(`Введите число`);
+// number % 2 === 0 ? (
+//     alert("Число четное")
+// ) : (
+//     alert("Число не четное")
+// );
 
 
 
@@ -228,7 +242,7 @@
 // if (year >= 60) alert('Пенсионер');
 
 // // Задача №2
-// const key = prompt(`safas`);
+// const key = prompt(`Намите на клавишу от 0-9`);
 // if (key == 0) alert(')');
 // if (key == 1) alert('!');
 // if (key == 2) alert('@');
@@ -240,8 +254,16 @@
 // if (key == 8) alert('*');
 // if (key == 9) alert('(');
 
-// Задача №3
 
+// // Задача №3
+// const number = +prompt(`Введите 3-х значное число: `);
+// const number1 = parseInt(number / 100);
+// const number2 = parseInt(number / 100) % 10;
+// const number3 = (number % 10);
+// if (number1 === number2 || number2 === number3 || number1 === number3)
+//     alert(`Есть совпадения цифр!`);
+// else
+//     alert(`Совпадений не найдено`);
 
 
 // // Задача №4
@@ -249,7 +271,32 @@
 // if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0) { alert(`${year} год високосный`) }
 // else if (year % 400 !== 0 || year % 4 !== 0) alert(`${year} год не високосный`)
 
-// Задача №5
+// // Задача №5
+// var b;
+// var c;
+// var e;
+// var a = +prompt("Введите пятизначное число", "")
+// if ((a > 9999) && (a < 100000)) {
+//     b = a / 10000;
+//     a = a % 10000;
+//     c = a / 1000;
+//     a = a % 1000;
+//     a = a % 100;
+//     e = a / 10;
+//     a = a % 10;
+
+//     if ((b == a) && (c == e)) {
+//         alert("Это число палиндром");
+//     }
+//     else {
+//         alert("Это число не палиндром");
+//     }
+// }
+// else {
+//     alert("Вы ввели не пятизначное");
+// }
+
+
 
 
 
@@ -266,17 +313,20 @@
 // let c = (usdChange * 70.93 / azn);
 // alert(`Вы получите ${c} манат.`)
 
-// Задача №7
+Задача №7
 const sumPurch = prompt(`Введите сумму покупки`, 277);
-if (sumPurch >= 200 && sumPurch <= 300) {
-    alert(`sdasd`);
-} 
-if (sumPurch >= 200 && sumPurch <= 300) {
-    alert(`sdasd`);
-}
-if (sumPurch >= 200 && sumPurch <= 300) {
-    alert(`sdasd`);
-}
-if (sumPurch >= 200 && sumPurch <= 300) {
-    alert(`sdasd`);
-}
+// if (sumPurch >= 200 && sumPurch <= 300) {
+//     alert(`sdasd`);
+// }
+// if (sumPurch >= 200 && sumPurch <= 300) {
+//     alert(`sdasd`);
+// }
+// if (sumPurch >= 200 && sumPurch <= 300) {
+//     alert(`sdasd`);
+// }
+// if (sumPurch >= 200 && sumPurch <= 300) {
+//     alert(`sdasd`);
+// }
+const a = (a > 199 && a < 201) - 3;
+const b = b > 299 && b < 501;
+const z = z >500;
