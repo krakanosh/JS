@@ -297,9 +297,6 @@
 // }
 
 
-
-
-
 // // Задача №6(Возможно работает неправильно!!!)
 // const usdChange = prompt(`Сколько долларов вы хотите поменять?`, 22);
 // const usd = 70.93;
@@ -313,20 +310,56 @@
 // let c = (usdChange * 70.93 / azn);
 // alert(`Вы получите ${c} манат.`)
 
-Задача №7
-const sumPurch = prompt(`Введите сумму покупки`, 277);
-// if (sumPurch >= 200 && sumPurch <= 300) {
-//     alert(`sdasd`);
+// Задача №7
+// const sumPurch = prompt(`Введите сумму покупки`, 277);
+// let thereSale;
+
+// if (sumPurch <= 300 && sumPurch >= 200 || sumPurch >= 300 && sumPurch <= 500) {
+//     thereSale = true;
+//     sumSale = sumPurch * (3 / 100);
+//     sale = sumPurch - sumSale;
 // }
-// if (sumPurch >= 200 && sumPurch <= 300) {
-//     alert(`sdasd`);
+// if (sumPurch >= 300 && sumPurch <= 500) {
+//     thereSale = true;
+//     sumSale = sumPurch * (5 / 100);
+//     sale = sumPurch - sumSale;
 // }
-// if (sumPurch >= 200 && sumPurch <= 300) {
-//     alert(`sdasd`);
+// if (sumPurch >= 500) {
+//     thereSale = true;
+//     sumSale = sumPurch * (7 / 100);
+//     sale = sumPurch - sumSale;
 // }
-// if (sumPurch >= 200 && sumPurch <= 300) {
-//     alert(`sdasd`);
+// else {
+//     thereSale = false;
+//     alert(`Скидки нету`);
 // }
-const a = (a > 199 && a < 201) - 3;
-const b = b > 299 && b < 501;
-const z = z >500;
+// console.log(thereSale);
+// console.log(sale);
+// alert(`Сумма к оплате со скидкой ${sale}`);
+
+
+
+// // Задача №8
+// const longCirle = prompt(`Длина окружности`);
+// const longSquare = prompt(`Периметр квадрата`);
+
+// let r = longCirle / (3.14 * 2) * 2;
+// let h = longSquare / 4;
+
+// let message = (r < h) ? `Такая окружность может поместиться в указанный квадрат.` :
+//     (r > h) ? `Такая окружность не может поместиться в указанный квадрат!` :
+//         '';
+// console.log(r);
+// console.log(h);
+// alert(message);
+
+
+// Задача №9
+const question1 = confirm(`2+2=4 ?`);
+const question2 = confirm(`5+5=10 ?`);
+const question3 = confirm(`6*6=36 ?`);
+
+const question1 = (question1 == true) ? `Правильный ответ +2 балла` :
+    //     const question2 = true ? `Правильный ответ +2 балла` :
+    // const question3 = true ? `Правильный ответ +2 балла` :
+    ``;
