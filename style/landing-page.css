@@ -4,22 +4,37 @@
 @import "header.css";
 @import "footer.css";
 
+.content {
+    background-color: #000;
+    width: 25vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red__square {
+    background-color: red;
+    width: 15vw;
+    height: 15vh;
+}
+
 .landing-page {
     padding-top: 60px;
     flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 1200px) {
     .landing-page {
-
     }
 }
 @media (max-width: 992px) {
     .landing-page {
-
     }
 }
 @media (max-width: 768px) {
     .landing-page {
-
     }
 }

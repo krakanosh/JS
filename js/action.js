@@ -1,4 +1,4 @@
-// //Условия
+// // Условия
 
 // let x = 5;
 // let y = 5;
@@ -209,7 +209,7 @@
 // let b = (sum % price);
 // alert(`${a} шоколадок можно купить ${b} рублей сдачи останется.`)
 
-// Задача №9
+// // Задача №9
 // let a = prompt(`Введите 3-х значное число`);
 // let b, sum = 0;
 // let z = a;
@@ -219,7 +219,6 @@
 //     a = parseInt(a / 10);
 // }
 // alert(sum);
-
 
 
 // // Задача №10
@@ -272,10 +271,10 @@
 // else if (year % 400 !== 0 || year % 4 !== 0) alert(`${year} год не високосный`)
 
 // // Задача №5
-// var b;
-// var c;
-// var e;
-// var a = +prompt("Введите пятизначное число", "")
+// let b;
+// let c;
+// let e;
+// let a = +prompt("Введите пятизначное число", "")
 // if ((a > 9999) && (a < 100000)) {
 //     b = a / 10000;
 //     a = a % 10000;
@@ -297,7 +296,7 @@
 // }
 
 
-// // Задача №6(Возможно работает неправильно!!!)
+// // Задача №6
 // const usdChange = prompt(`Сколько долларов вы хотите поменять?`, 22);
 // const usd = 70.93;
 // const eur = 82.46;
@@ -310,7 +309,7 @@
 // let c = (usdChange * 70.93 / azn);
 // alert(`Вы получите ${c} манат.`)
 
-// Задача №7
+// // Задача №7
 // const sumPurch = prompt(`Введите сумму покупки`, 277);
 // let thereSale;
 
@@ -343,7 +342,7 @@
 // const longCirle = prompt(`Длина окружности`);
 // const longSquare = prompt(`Периметр квадрата`);
 
-// let r = longCirle / (3.14 * 2) * 2;
+// let r = longCirle / (Math.PI * 2) * 2;
 // let h = longSquare / 4;
 
 // let message = (r < h) ? `Такая окружность может поместиться в указанный квадрат.` :
@@ -354,12 +353,368 @@
 // alert(message);
 
 
-// Задача №9
-const question1 = confirm(`2+2=4 ?`);
-const question2 = confirm(`5+5=10 ?`);
-const question3 = confirm(`6*6=36 ?`);
+// // Задача №9 (Не работает!!!!)
+// const question1 = confirm(`2+2=4 ?`);
+// let balls;
+// let a = 2;
 
-const question1 = (question1 == true) ? `Правильный ответ +2 балла` :
-    //     const question2 = true ? `Правильный ответ +2 балла` :
-    // const question3 = true ? `Правильный ответ +2 балла` :
-    ``;
+// if (question1 == true || question1 == false) {
+//     question1 == true ?
+//         alert(`Правильный ответ +2 балла. У Вас ${balls = + a} баллов.`) :
+//         alert(`Неправильный ответ`);
+// }
+
+// const question2 = confirm(`5+5=10 ?`);
+
+// if (question1 == true || question1 == false) {
+//     question1 == true ?
+//         alert(`Правильный ответ +2 балла. У Вас ${balls = ++ a}баллов.`) :
+//         alert(`Неправильный ответ`);
+// }
+
+// const question3 = confirm(`6*6=36 ?`);
+// if (question1 == true || question1 == false) {
+//     question1 == true ?
+//         alert(`Правильный ответ +2 балла. У Вас ${balls = + a} баллов.`) :
+//         alert(`Неправильный ответ`);
+// }
+// alert(`Вы набоали ${balls} баллов.`);
+// console.log(balls);
+// console.log(a);
+
+
+
+// // Задача №10
+// const d = 15, m = 10, y = 2021;
+
+// if (d && m && y) {
+//     n10(d, m, y);
+// } else {
+//     alert('Плохие данные');
+// }
+
+// function n10(d, m, y) {
+//     const isVis = y % 400 === 0 || (y % 4 === 0 && y % 100 !== 0);
+
+//     let next = false;
+
+//     switch (m) {
+//         case 1:
+//         case 3:
+//         case 5:
+//         case 7:
+//         case 8:
+//         case 10:
+//         case 12:
+//             next = d === 31;
+//             break;
+//         case 4:
+//         case 6:
+//         case 9:
+//         case 11:
+//             next = d === 30;
+//             break;
+//         case 2:
+//             next = isVis ? d === 29 : d === 28;
+//         default:
+//             alert('всё плохо');
+//     }
+
+//     if (m === 12 && next) {
+//         console.log('01.01.' + (y + 1));
+//     } else {
+//         next ? console.log('01.' + (m + 1) + '.' + y) : console.log((d + 1) + '.' + m + '.' + y);
+//     }
+// }
+
+
+// // DZ 3
+// // Задача №1
+// let a = +prompt(`Введите число начала отсчета`);
+// let b = +prompt(`Введите число конца отсчета`);
+// let sum = 0;
+// while (a <= b) {
+//     sum += a; a++;
+// }
+// console.log(sum);
+// alert(`Сумма всех чисел в данном диапазоне равна ${sum}`);
+
+
+// // Задача №2
+// let a = +prompt(`Введите первое число`);
+// let b = +prompt(`Введите второе число`);
+
+// while (a) {
+
+// }
+
+
+// // Задача №3
+// const a = prompt(`Введите число`, 48);
+// while (condition) {
+
+// }
+
+// // Задача №4
+// let n = +prompt(`Введите число`, 48);
+// let i = 1;
+// while ((n /= 10) >= 1) { i++ }
+// alert(`В этом числе ${i} цифр`);
+
+// // Задача №5
+// let number = +prompt(`Введите число`);
+// let plus = 0, minus = 0, zero = 0;
+// do {
+//     if (number > 0) {
+//         plus++
+//         console.log(plus);
+//     }
+//     if (number < 0) {
+//         alert(`dasf`);
+//     }
+//     if (number == 0) {
+//         alert(`dasf`);
+//     }
+// }
+// while (number > 0 || number > 0 || number == 0)
+
+// // DZ 4
+// // Задача №7
+// function time(h = `00`, m = `00`, s = `00`,) {
+//     let h1 = 0 , m1 = 0 , s1 = 0;
+//     if (h > 9) {
+//         h1 = h;
+//     }
+// else if ((h>0) && (h<10)) {
+//     h1 = `0` + h
+// }
+// else {
+//     h1 = h;
+// }
+// console.log(`${h1}:${m1}:${s1}` );
+// }
+// const a = +prompt(`Часы`);
+// time(a);
+
+
+// // Задача №8
+
+
+
+// // Задача №10
+// решить задачу переводом в секунды
+
+// // DZ 5
+// // Задача №2
+// function NOD(a,b) {
+//     if ( b===0) return a;
+//     if (a>b)
+//         return NOD (b, a % b)
+//     else
+//         return NOD(b, a % b)
+// }
+// console.log();
+
+// // Задача №3
+// const number = `546465`;
+// let result = 0;
+
+// for (let i = 0; i > number.length; i++) {
+// result = number[i] >= result ? number[i] : result;  
+// }
+// console.log(result);
+
+// function getMaxNum(number) {
+//     if (
+//         number.length === 0) return
+//         return getMaxNum();
+// }
+
+
+
+
+
+
+
+// // DZ 6
+// // Задача №1
+// const lada = {
+//     manufacturer: `vaz`,
+//     model: 2101,
+//     year: 1970,
+//     kph: 70,
+// };
+// console.log(lada.manufacturer);
+// const s = prompt(`Введите расстояние между городами(в киломатрах).`)
+// let t = (s / kph);
+
+// alert(`Вам необходимо двигаться со скоростью ${v} км/ч , чтобы
+// успеть вовремя.`)
+// const s = prompt(`Введите расстояние между городами(в киломатрах).`)
+
+// function isT(lada) {
+//     // const s = prompt(`Введите расстояние между городами(в киломатрах).`)
+//     let t = s / lada.kph;
+//     console.log(t);
+// }
+
+// const petr = {
+//     name: `petr`,
+//     age: 18,
+//     speciality: `Fullstack`,
+//     city: `Tula`,
+//     sayHi: function kid() {
+//         console.log(`Привет ${this.name}`);
+//     }
+// }
+// console.log();
+// const fruits = [`aplle`, `mango`, `apelsin`]
+// console.log(fruits);
+// let total = fruits.push(`mandarin`, `сherry`)
+// const map = new.Map(fruits)
+// console.log(fruits);
+// console.log(map);
+
+
+// let arrNew = [
+//     `Ваня`, `Коля`, `Андрей`
+// ];
+// console.log(arrNew);
+// arrNew.splice(0, 1, `Алексей`);
+// console.log(arrNew);
+// let remuved = arrNew.splice(0, 1);
+// console.log(arrNew);
+// arrNew.shift();
+// console.log(arrNew);
+// arrNew.unshift(`Ваня`, `Коля`);
+// console.log(arrNew);
+// arrNew.push(`Алексей`);
+// console.log(arrNew);
+// delete arrNew[2];
+// console.log(arrNew);
+// console.log(arrNew[2]);
+
+
+
+
+
+// DOM дерево
+
+// const htmlElement = document.documentElement;      //Получение полностью всей страницы
+const bodyElement = document.body;                 //Получение отдельных элементов
+// const headElement = document.head;              //Получение отдельных элементов
+// console.log(htmlElement);
+// console.log(bodyElement);
+// console.log(headElement);
+// const firstChildNode = bodyElement.firstChild;
+// const lastChildNode = bodyElement.lastChild;
+// console.log(firstChildNode);
+// console.log(lastChildNode);
+
+// const childNodes = bodyElement.childNodes;  // Получаем коллекцию всех дочерних узлов, включая текстовые.
+// console.log(childNodes);
+// console.log(bodyElement.hasChildNodes()); //Для проверки наличия дочерних узлов. true/false
+// //Перебор коллекции for of
+// for (let node of childNodes) {
+//     console.log(node); //Покажет все узлы коллекции
+// }
+
+// const previousSiblingNode = bodyElement.previousSibling;    //Получаем предыдущий узел обьекта
+// const nextSiblingNode = bodyElement.nextSibling;    //Получаем следующий узел обьекта
+// const parentNode = bodyElement.parentNode;  //Получаем родителя обьекта
+// console.log(previousSiblingNode);
+// console.log(nextSiblingNode);
+// console.log(parentNode);
+
+// const bodyChildren = bodyElement.children;  // Получаем коллекцию всех дочерних елементов.
+// console.log(bodyChildren);
+
+// const firstChild = bodyElement.firstElementChild;  //Получаем первый дочерний елемент
+// const lastChild = bodyElement.lastElementChild;    //Получаем последний дочерний елемент
+// console.log(firstChild);
+// console.log(lastChild);
+
+// const previousSibling = bodyElement.previousElementSibling; //Получаем предыдущий елемент
+// const nextSibling = bodyElement.nextElementSibling; //Получаем следующий елемент
+// const parent = bodyElement.parentElement;   //Получаем родительский елемент
+// console.log(previousSibling);
+// console.log(nextSibling);
+// console.log(parent);
+
+// const elementOne = document.querySelectorAll(`.red__square`);   //Поиск по классу
+// console.log(elementOne);
+// const elementTwo = document.querySelectorAll(`div`);    //Поиск по тегу
+// console.log(elementTwo);
+// const elementThree = document.querySelectorAll(`div.container`); //Поиск по тегу и классу
+// console.log(elementThree);
+// const elementFour = document.querySelectorAll(`.page-wrapper>div`); //Поиск по тегу первого уровня вложенности
+// console.log(elementFour);
+// const elementFive = document.querySelectorAll(`.header, .footer`); //Поиск по нескольким классам
+// console.log(elementFive);
+// const elementSixe = document.querySelectorAll(`.page-wrapper .landing-page`); //Поиск по вложенным классам
+// console.log(elementSixe);
+// const elementSeven = document.querySelectorAll(`#qwerty`); //Поиск по ID
+// console.log(elementSeven);
+// const elementEight = document.querySelectorAll(`[data-item]`); //Поиск по атрибуту
+// console.log(elementEight);
+// const elementNine = document.querySelectorAll(`[data-item="10"]`); //Поиск по атрибуту
+// console.log(elementNine);
+
+//querySelectorAll - статичная коллекция!
+
+// const element = document.querySelectorAll(`li`);    //Получение конкретного элемента коллекции
+// for (const item of element) {
+//     console.log(item);
+// }
+
+// element.forEach(item => {
+//     console.log(item);
+// });
+
+// const helloList = document.querySelectorAll(`.hello__list`);
+// const helloList = document.querySelector
+// const helloListItems = helloList[0].querySelectorAll(`li`);
+// console.log(helloListItems);
+
+// const helloList = document.querySelectorAll(`.hello__list`)[0];
+// // const helloList = document.querySelector(`.hello__list`);
+// console.log(helloList);
+
+
+//Поиск произвольного элемента
+//Возвращает живую коллекцию!!!
+
+// document.getElementById и document.getElementsBy..!!!!!! РАЗНЫЕ ВЕЩИ!!!!
+
+// const elem = document.getElementById(`qwerty`);
+// console.log(elem);
+
+// const elem = document.getElementsByTagName(`section`);
+// console.log(elem);
+
+// const elem = document.getElementsByClassName(`footer__nav`);
+// console.log(elem);
+
+// const listStatic = document.querySelectorAll(`.hello__list`);   //Стаитичная коллекция
+// const listLive = document.getElementsByClassName(`hello__list`);    //Живая коллекция
+// console.log(listStatic);
+// console.log(listLive);
+
+// const elem = document.querySelector(`.good__bye`);
+// const parentList = elem.closest(`.container`);
+// console.log(parentList);
+
+const menuButton = document.querySelector(`.content__style`);
+const dropDown = document.getElementById(`drop__down`);
+const contentView = document.querySelector(`.content__hidden`);
+// console.log(dropDown);
+console.log(contentView);
+
+menuButton.addEventListener(`mouseover`, function () {
+    contentView.classList.toggle(`content__hidden`)
+    console.log(`показать`);
+});
+dropDown.addEventListener(`mouseout`, function () {
+    contentView.classList.toggle(`content__hidden`)
+    console.log(`скрыть`);
+});
